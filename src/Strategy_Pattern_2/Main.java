@@ -7,9 +7,12 @@ public class Main {
     public static void main(String[] args) {
 
         Tier oTierEins = new Saeugetier();
-
+        Tier oTierzwei = new Vogel();
         oTierEins.bewegen();
+        oTierzwei.bewegen();
+        oTierzwei.fortpflanzen();
         oTierEins.fortpflanzen();
+
 
 
 
