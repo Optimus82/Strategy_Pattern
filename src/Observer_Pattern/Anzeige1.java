@@ -11,13 +11,13 @@ public class Anzeige1 implements Beobachter,AnzeigeElement {
 
     public Anzeige1(Subject brutdaten) {
         this.brutdaten = brutdaten;
-        brutdaten.registrieBeobachter(this);
+        brutdaten.registriereBeobachter(this);
     }
 
     @Override
-    public void aktualisieren(float temp, float luftfechtigkeit, boolean lampStatus) {
+    public void aktualisieren(float temp, float lf, boolean lampStatus) {
         this.temperatur = temp;
-        this.luftfeuchtigkeit = luftfechtigkeit;
+        this.luftfeuchtigkeit = lf;
         anzeigen();
 
     }

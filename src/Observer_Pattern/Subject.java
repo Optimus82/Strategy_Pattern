@@ -5,7 +5,7 @@ package Observer_Pattern;
  */
 public interface Subject {
 
-    public void registrieBeobachter(Beobachter beobachter);
+    public void registriereBeobachter(Beobachter beobachter);
     public void entferneBeobachter(Beobachter beobachter);
     public void aktualisiereBeobachter();
 

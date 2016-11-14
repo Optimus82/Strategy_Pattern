@@ -18,7 +18,7 @@ public class BrutDaten implements Subject {
 
 
     @Override
-    public void registrieBeobachter(Beobachter oB) {
+    public void registriereBeobachter(Beobachter oB) {
         beobachter.add(oB);
 
     }
@@ -35,20 +35,21 @@ public class BrutDaten implements Subject {
 
     @Override
     public void aktualisiereBeobachter() {
-        for(int i = 0; i<beobachter.size();i++){
+        for (int i = 0; i < beobachter.size(); i++) {
             Beobachter b = (Beobachter) beobachter.get(i);
-            b.aktualisieren(temperatur,luftfeuchtigkeit,lampStatus);
+            b.aktualisieren(temperatur, luftfeuchtigkeit, lampStatus);
         }
 
     }
 
-    public void messwerteGeaendert(){
+    public void messwerteGeaendert() {
         aktualisiereBeobachter();
 
     }
-    public void setMesswerte(float temp, float lf, boolean ls){
+
+    public void setMesswerte(float temp, float lf, boolean ls) {
         this.temperatur = temp;
-        this.lampStatus = ls;
+        this.luftfeuchtigkeit = lf;
         this.lampStatus = ls;
 
         messwerteGeaendert();

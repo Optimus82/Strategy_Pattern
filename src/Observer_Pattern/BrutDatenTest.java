@@ -11,9 +11,14 @@ public class BrutDatenTest {
         Anzeige1 oAnzeige2 = new Anzeige1(brutDaten);
         Anzeige1 oAnzeige3 = new Anzeige1(brutDaten);
 
+        brutDaten.entferneBeobachter(oAnzeige1);
+        brutDaten.registriereBeobachter(oAnzeige1);
+
         brutDaten.setMesswerte(30.3f, 55, true);
         brutDaten.setMesswerte(35.0f, 60, true);
-        brutDaten.setMesswerte(35.0f, 59, false);
+        brutDaten.setMesswerte(33.0f, 59, false);
+
+
     }
 
 }
