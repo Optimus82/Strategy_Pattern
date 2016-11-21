@@ -14,7 +14,7 @@ public class BrutDatenTest {
         brutDaten.entferneBeobachter(oAnzeige1);
         brutDaten.registriereBeobachter(oAnzeige1);
 
-        brutDaten.setMesswerte(30.3f, 55, true);
+        brutDaten.setMesswerte(30.0f, 55, true);
         brutDaten.setMesswerte(35.0f, 60, true);
         brutDaten.setMesswerte(33.0f, 59, false);
 
