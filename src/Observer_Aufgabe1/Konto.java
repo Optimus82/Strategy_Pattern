@@ -11,7 +11,6 @@ public class Konto extends Observable {
     private double kontostand;
     private ArrayList konten;
     private Kontoinhaber kontoInhaber;
-    private double betrag;
     private String kontoID;
 
     public Konto(Kontoinhaber kontoinhaber, String kontoID) {

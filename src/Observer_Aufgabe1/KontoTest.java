@@ -13,6 +13,7 @@ public class KontoTest {
         oKonto.gutschreiben(670.00);
         oKonto.belasten(940.00);
         oKonto.gutschreiben(1500);
+        System.out.println(oKonto.countObservers());
 
     }
 }
