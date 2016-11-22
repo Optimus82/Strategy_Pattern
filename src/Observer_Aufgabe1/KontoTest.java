@@ -11,9 +11,8 @@ public class KontoTest {
         Konto oKonto = new Konto(oKontoinhaber, "5404056854");
         oKonto.addObserver(oKontoinhaber);
         oKonto.gutschreiben(670.00);
-        oKonto.belasten(940.00);
-        oKonto.gutschreiben(1500);
-        oKonto.belasten(2000);
+        oKonto.belasten(8);
+        oKonto.belasten(800);
 
     }
 }

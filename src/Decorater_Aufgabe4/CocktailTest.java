@@ -8,13 +8,13 @@ public class CocktailTest {
 
     public static void main(String[] args) {
 
-        Getränk Sex = new OrangenSaft();
-        Sex = new Pfirsichlikoer(Sex);
-        Sex = new CranberrySaft(Sex);
-        Sex = new Wodka(Sex);
-        Sex = new Wodka(Sex);
+        Getränk SexOnTheBeach = new OrangenSaft();
+        SexOnTheBeach = new Pfirsichlikoer(SexOnTheBeach);
+        SexOnTheBeach = new CranberrySaft(SexOnTheBeach);
+        SexOnTheBeach = new Wodka(SexOnTheBeach);
+        SexOnTheBeach = new Wodka(SexOnTheBeach);
 
-        System.out.println(Sex.getBeschreibing() + " " + Sex.getPreis() + " € ");
+        System.out.println(SexOnTheBeach.getBeschreibing() + " " + SexOnTheBeach.getPreis() + " € ");
 
 
 
