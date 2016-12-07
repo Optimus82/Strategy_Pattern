@@ -11,9 +11,9 @@ public class Konto extends Observable {
     private double kontostand;
     private ArrayList konten;
     private Kontoinhaber kontoInhaber;
-    private String kontoID;
+    private long kontoID;
 
-    public Konto(Kontoinhaber kontoinhaber, String kontoID) {
+    public Konto(Kontoinhaber kontoinhaber, long kontoID) {
         konten = new ArrayList();
         kontostand = 0.00;
         this.kontoInhaber = kontoinhaber;
@@ -40,9 +40,9 @@ public class Konto extends Observable {
 
     public String anzeigen(){
         if (kontostand < 0.00)
-            return "ACHTUNG - Das Konto mit der ID: " + kontoID + " hat den Kontostand SOLL: " + kontostand;
+            return "ACHTUNG - Das Konto mit der ID: " + kontoID + " hat den Kontostand SOLL: " + kontostand + " € ";
         else
-            return "ACHTUNG - Das Konto mit der ID: " + kontoID + " hat den Kontostand HABEN: " + kontostand;
+            return "ACHTUNG - Das Konto mit der ID: " + kontoID + " hat den Kontostand HABEN: " + kontostand + " € ";
     }
 
 }

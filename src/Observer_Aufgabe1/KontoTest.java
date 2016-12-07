@@ -8,11 +8,10 @@ public class KontoTest {
     public static void main(String[] args) {
 
         Kontoinhaber oKontoinhaber = new Kontoinhaber("Fabian Steffan");
-        Konto oKonto = new Konto(oKontoinhaber, "5404056854");
+        Konto oKonto = new Konto(oKontoinhaber, 5404056854l);
         oKonto.addObserver(oKontoinhaber);
-        oKonto.gutschreiben(670.00);
-        oKonto.belasten(8);
-        oKonto.belasten(800);
+        oKonto.gutschreiben(5);
+        oKonto.belasten(500);
 
     }
 }
