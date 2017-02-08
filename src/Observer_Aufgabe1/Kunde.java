@@ -6,13 +6,17 @@ import java.util.Observer;
 /**
  * Created by Optimus82 on 18.11.16.
  */
-public class Kontoinhaber implements Observer {
+public class Kunde implements Observer {
 
     private String name;
 
 
-    public Kontoinhaber(String name) {
+
+
+    public Kunde(String name) {
+
         this.name = name;
+
     }
 
 
@@ -20,5 +24,4 @@ public class Kontoinhaber implements Observer {
     public void update(Observable o, Object arg) {
         System.out.println(arg);
     }
-
 }

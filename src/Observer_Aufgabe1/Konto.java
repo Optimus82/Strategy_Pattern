@@ -8,21 +8,25 @@ import java.util.Observable;
  */
 public class Konto extends Observable {
 
-    private double kontostand;
-    private ArrayList konten;
-    private Kontoinhaber kontoInhaber;
+    private double kontostand = 0.00;
+    private Kunde kontoInhaber;
     private long kontoID;
 
-    public Konto(Kontoinhaber kontoinhaber, long kontoID) {
-        konten = new ArrayList();
-        kontostand = 0.00;
-        this.kontoInhaber = kontoinhaber;
+
+
+
+
+    public Konto(Kunde kunde, long kontoID) {
+        this.kontoInhaber = kunde;
         this.kontoID = kontoID;
+        this.addObserver(kunde);
+
+
+
     }
 
     public double gutschreiben(double betrag) {
         kontostand += betrag;
-
         setChanged();
         notifyObservers(anzeigen());
 

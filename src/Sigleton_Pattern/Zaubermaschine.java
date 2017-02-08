@@ -3,7 +3,7 @@ package Sigleton_Pattern;
 /**
  * Created by Optimus82 on 07.12.16.
  */
-public class Zaubermaschine extends Thread {
+public class Zaubermaschine  {
 
     private boolean leer;
     private boolean gefroren;
